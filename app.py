@@ -9,8 +9,8 @@ def create_image():
     # Dessiner un rectangle rouge
     draw.rectangle([50, 50, 250, 250], outline="red", width=5)
 
-    # Enregistrer l'image
-    image_path = os.path.join(os.getcwd(), "output_image.png")
+   # Enregistrez l'image dans le répertoire '/tmp' par exemple
+    image_path = os.path.join("/tmp", "output_image.png")
     image.save(image_path)
     return image_path
 
